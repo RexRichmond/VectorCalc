@@ -1,12 +1,3 @@
-// src/index.js
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
-
-
 // src/App.js
 import React, { useState } from "react";
 import jsPDF from "jspdf";
@@ -27,7 +18,8 @@ export default function App() {
   const [mode, setMode] = useState("current");
 
   const compliantPatients = (patients * compliance) / 100;
-  const adjustedReimbursement = reimbursement * gpci * (mode === "vector" ? 1.2 : 1.0);
+  const adjustedReimbursement =
+    reimbursement * gpci * (mode === "vector" ? 1.2 : 1.0);
   const revenue = compliantPatients * adjustedReimbursement;
 
   const generatePDF = () => {
@@ -40,7 +32,7 @@ export default function App() {
         ["Number of Patients", patients],
         ["Compliance (%)", compliance],
         ["Reimbursement", `$${reimbursement}`],
-        ["GPCI Locality", GPCI_OPTIONS.find(g => g.value === gpci).label],
+        ["GPCI Locality", GPCI_OPTIONS.find((g) => g.value === gpci).label],
         ["Billing Mode", mode === "vector" ? "Vector" : "Current"],
         ["Compliant Patients", compliantPatients],
         ["Adjusted Reimbursement", `$${adjustedReimbursement.toFixed(2)}`],
@@ -87,8 +79,10 @@ export default function App() {
       <label>
         GPCI Locality:
         <select value={gpci} onChange={(e) => setGpci(Number(e.target.value))}>
-          {GPCI_OPTIONS.map(opt => (
-            <option key={opt.label} value={opt.value}>{opt.label}</option>
+          {GPCI_OPTIONS.map((opt) => (
+            <option key={opt.label} value={opt.value}>
+              {opt.label}
+            </option>
           ))}
         </select>
       </label>
