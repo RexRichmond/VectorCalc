@@ -1,10 +1,16 @@
 {
   "files": {
-    "main.js": "/roi-calculator/static/js/main.2389f7fa.js",
-    "index.html": "/roi-calculator/index.html",
-    "main.2389f7fa.js.map": "/roi-calculator/static/js/main.2389f7fa.js.map"
+    "main.js": "/VectorCalc/static/js/main.911ae793.js",
+    "static/js/239.0da8da66.chunk.js": "/VectorCalc/static/js/239.0da8da66.chunk.js",
+    "static/js/213.6f06e86d.chunk.js": "/VectorCalc/static/js/213.6f06e86d.chunk.js",
+    "static/js/732.a0f749b5.chunk.js": "/VectorCalc/static/js/732.a0f749b5.chunk.js",
+    "index.html": "/VectorCalc/index.html",
+    "main.911ae793.js.map": "/VectorCalc/static/js/main.911ae793.js.map",
+    "239.0da8da66.chunk.js.map": "/VectorCalc/static/js/239.0da8da66.chunk.js.map",
+    "213.6f06e86d.chunk.js.map": "/VectorCalc/static/js/213.6f06e86d.chunk.js.map",
+    "732.a0f749b5.chunk.js.map": "/VectorCalc/static/js/732.a0f749b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.2389f7fa.js"
+    "static/js/main.911ae793.js"
   ]
 }
